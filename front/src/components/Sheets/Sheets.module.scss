@@ -1,0 +1,65 @@
+.sheets {
+    flex-grow: 1;
+    z-index: 0;
+    transform-origin: top left;
+
+    &.createSheet {
+        cursor: copy;
+    }
+
+    &.zoomIn {
+        cursor: zoom-in;
+    }
+
+    &.zoomOut {
+        cursor: zoom-out;
+    }
+}
+
+.sheet {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(236, 245, 0);
+    box-shadow: 2px 2px 10px 0px #666;
+
+    transition: box-shadow 0.1s;
+    cursor: grab;
+    user-select: none;
+    
+    &.moving {
+        cursor: grabbing;
+        box-shadow: 4px 4px 15px 1px #777;
+    }
+    
+    & .settings {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        cursor: pointer;
+    }
+
+    & .delete {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        cursor: pointer;
+    }
+
+    & .resize {
+        position: absolute;
+        bottom: -4px;
+        right: -4px;
+        width: 12px;
+        height: 12px;
+
+        border-radius: 100%;
+        border: 2px solid #fff;
+        background-color: #333;
+        cursor: all-scroll;
+    }
+
+    & .resize.shift {
+        cursor: se-resize;
+    }
+}

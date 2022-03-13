@@ -1,0 +1,11 @@
+TODO:
+1. Possibility to set sheet text and change its size(auto or fixed)
+2. to save files and load them
+3. to insert images
+4. ctrl + z, ctrl + y
+5. to rotate images
+6. to add toolbar with:
+    1) sheets
+    2) scale + / -
+    3) draw
+7. to write text in sheets

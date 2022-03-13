@@ -1,0 +1,16 @@
+@import "~reset-css";
+
+#root {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  --border-color: #ccc;
+}
